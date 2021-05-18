@@ -1,0 +1,4 @@
+R5T.Newport.Extensions - Extensions library for the "Newtonsoft.JSON" NuGet package.
+
+Goals
+
