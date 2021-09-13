@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 using Newtonsoft.Json;
 
@@ -16,6 +17,16 @@ namespace Newtonsoft.Json
             var serializer = NewportUtilities.GetStandardJsonSerializer();
 
             var output = serializer.Deserialize<T>(jsonFilePath);
+            return output;
+        }
+
+        public static async Task<T> LoadFromFile<T>(string jsonFilePath, string keyName)
+        {
+            var jObject = await JsonHelper.LoadAsJObject(jsonFilePath);
+
+            var keyedJObject = jObject[keyName];
+
+            var output = keyedJObject.ToObject<T>();
             return output;
         }
 
