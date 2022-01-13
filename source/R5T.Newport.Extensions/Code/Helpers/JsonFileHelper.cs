@@ -1,9 +1,6 @@
 ﻿using System;
+using System.IO;
 using System.Threading.Tasks;
-
-using Newtonsoft.Json;
-
-using R5T.Magyar.IO;
 
 using NewportUtilities = R5T.Newport.Utilities;
 
