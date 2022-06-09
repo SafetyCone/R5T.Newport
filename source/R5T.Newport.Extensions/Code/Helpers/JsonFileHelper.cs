@@ -2,10 +2,12 @@
 using System.IO;
 using System.Threading.Tasks;
 
+using Newtonsoft.Json;
+
 using NewportUtilities = R5T.Newport.Utilities;
 
 
-namespace Newtonsoft.Json
+namespace R5T.Newport
 {
     public static class JsonFileHelper
     {
